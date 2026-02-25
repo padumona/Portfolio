@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pradip Shende — Content Technology & DAM/MAM</title>
+  <meta name="description" content="Portfolio of Pradip Shende — Associate Director, Content Technology. Expert in Vizrt Viz One MAM, DAM, workflows, metadata, and asset delivery." />
+  <meta name="author" content="Pradip Shende" />
+  <meta property="og:title" content="Pradip Shende — Content Technology & DAM/MAM" />
+  <meta property="og:description" content="Associate Director (Content Technology) specializing in Viz One MAM, DAM, and end‑to‑end digital workflows." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b1220;          /* slate-950 */
+      --panel: #0f172a;       /* slate-900 */
+      --muted: #94a3b8;       /* slate-400 */
+      --text: #e2e8f0;        /* slate-200 */
+      --brand: #22d3ee;       /* cyan-400 */
+      --brand-2: #60a5fa;     /* blue-400 */
+      --accent: #34d399;      /* emerald-400 */
+      --chip: #1f2937;        /* gray-800 */
+      --border: #243041;      
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: min(1100px, 92%); margin: 0 auto; }
+    header { position: sticky; top: 0; backdrop-filter: blur(8px); background: rgba(11,18,32,0.6); border-bottom: 1px solid var(--border); z-index: 50; }
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+    .logo { font-weight: 700; letter-spacing: 0.4px; }
+    .nav-links a { margin-left: 18px; font-weight: 500; color: var(--text); opacity: 0.9; }
+    .btn { display: inline-flex; align-items: center; gap: 10px; padding: 10px 16px; border-radius: 10px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #061014; font-weight: 600; border: 0; }
+    .btn-outline { background: transparent; border: 1px solid var(--border); color: var(--text); }
+
+    /* Hero */
+    .hero { padding: 70px 0 30px; }
+    .hero-wrap { display: grid; grid-template-columns: 1.3fr 1fr; gap: 36px; align-items: center; }
+    .hero h1 { font-size: clamp(28px, 4vw, 44px); line-height: 1.15; margin: 0 0 12px; }
+    .hero p.lede { color: var(--muted); font-size: clamp(15px, 1.7vw, 18px); margin: 0 0 22px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 26px; }
+    .chip { background: var(--chip); border: 1px solid var(--border); padding: 6px 10px; border-radius: 999px; font-size: 13px; color: #cbd5e1; }
+    .card { background: var(--panel); border: 1px solid var(--border); border-radius: 16px; padding: 18px; }
+    .avatar { width: 120px; height: 120px; border-radius: 16px; background: linear-gradient(135deg, #0ea5e9, #22d3ee); display: grid; place-items: center; font-weight: 800; color: #0b1220; }
+
+    /* Sections */
+    section { padding: 46px 0; }
+    h2 { font-size: 22px; margin: 0 0 18px; }
+    .grid { display: grid; gap: 16px; }
+    .two { grid-template-columns: repeat(2, 1fr); }
+    .three { grid-template-columns: repeat(3, 1fr); }
+    .pill { font-size: 13px; padding: 6px 10px; background: var(--chip); border: 1px solid var(--border); border-radius: 999px; display: inline-block; margin: 4px 6px 0 0; color: #cbd5e1; }
+
+    /* Timeline */
+    .timeline { position: relative; padding-left: 24px; }
+    .timeline::before { content: ""; position: absolute; left: 8px; top: 0; bottom: 0; width: 2px; background: var(--border); }
+    .t-item { position: relative; margin: 0 0 18px; }
+    .t-item::before { content: ""; position: absolute; left: 2px; top: 8px; width: 12px; height: 12px; background: var(--brand); border-radius: 50%; box-shadow: 0 0 0 3px rgba(34,211,238,0.2); }
+    .t-head { display: flex; align-items: baseline; gap: 10px; }
+    .t-title { font-weight: 600; }
+    .t-meta { color: var(--muted); font-size: 13px; }
+
+    /* Cards */
+    .kpi { display: grid; gap: 10px; }
+    .kpi strong { font-size: 26px; }
+
+    footer { border-top: 1px solid var(--border); padding: 28px 0; color: var(--muted); font-size: 14px; }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero-wrap { grid-template-columns: 1fr; }
+      .two { grid-template-columns: 1fr; }
+      .three { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">PRADIP <span style="color:var(--brand)">SHENDE</span></div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#certs">Certifications</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-wrap">
+        <div>
+          <h1>Associate Director – Content Technology<br/>MAM/DAM & Vizrt Specialist</h1>
+          <p class="lede">20+ years building reliable, high‑volume <strong>media workflows</strong>—from Viz One MAM administration and metadata governance to secure distribution, archive, and multi‑platform delivery.</p>
+          <div class="chips">
+            <span class="chip">Vizrt Viz One</span>
+            <span class="chip">MAM / DAM</span>
+            <span class="chip">Metadata & Taxonomy</span>
+            <span class="chip">JIRA (Support / CMT / PMT)</span>
+            <span class="chip">Transcoding: Elemental, Vantage</span>
+            <span class="chip">Archive: Oracle DIVA</span>
+            <span class="chip">SAN/NAS</span>
+            <span class="chip">FileCatalyst / Aspera</span>
+            <span class="chip">AWS / Azure</span>
+          </div>
+          <div style="display:flex; gap:10px; flex-wrap: wrap;">
+            <a class="btn" href="#contact">Get in touch</a>
+            <a class="btn btn-outline" href="https://www.linkedin.com/in/pradip-shende-815b5616" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+        <div class="card" style="display:grid; grid-template-columns: 120px 1fr; gap:16px; align-items:center;">
+          <div class="avatar">PS</div>
+          <div class="kpi">
+            <div>
+              <strong>40+</strong><br/><span class="t-meta">Channels managed (domestic & international)</span>
+            </div>
+            <div>
+              <strong>20+ yrs</strong><br/><span class="t-meta">Content Technology Experience</span>
+            </div>
+            <div>
+              <strong>MPAA</strong><br/><span class="t-meta">Security‑compliant workflows</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container grid two">
+        <div class="card">
+          <h2>About</h2>
+          <p>I manage high‑availability MAM/DAM ecosystems with a focus on <strong>Viz One administration</strong>, workflow design, and <strong>accurate, on‑time asset delivery</strong>. I partner with creative, digital, and engineering teams to structure assets, enforce metadata and naming conventions, and maintain end‑to‑end content pipelines.</p>
+          <p>Comfortable in high‑volume environments, I drive <strong>JIRA‑based operations</strong> (Support, CMT, PMT), build SOPs and checklists, deliver training, and continuously improve processes for reliability and speed.</p>
+        </div>
+        <div class="card">
+          <h2>Highlights</h2>
+          <ul>
+            <li>Viz One MAM technical ownership across broadcast and digital.</li>
+            <li>Custom workflow automation for ingest, proxy, QC, metadata, archive & distribution.</li>
+            <li>Training & enablement for internal users and international vendors.</li>
+            <li>Transcoding operations: Elemental, Telestream Vantage, Carbon Coder; QC with Baton; watermarking with NexGuard.</li>
+            <li>Archive & storage: Oracle DIVA; 200TB+ SAN/NAS deployments.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="card timeline">
+          <div class="t-item">
+            <div class="t-head">
+              <div class="t-title">Associate Director – Content Technology • Zee Entertainment Enterprises Ltd.</div>
+              <div class="t-meta">Mumbai • 2019 — Present</div>
+            </div>
+            <ul>
+              <li>Led Viz One MAM strategy, administration, and workflow deployment for <strong>40+ channels</strong> (domestic & international).</li>
+              <li>Owned end‑to‑end asset lifecycle: ingest, metadata, QC, archive (Oracle DIVA), distribution, multi‑platform delivery.</li>
+              <li>Managed <strong>JIRA</strong> operations: Support tickets, <strong>CMT</strong> (Change Management), <strong>PMT</strong> (Patch Management); RCA documentation & SLA tracking.</li>
+              <li>Integrated transcoding (Elemental, Vantage), QC (Baton), watermarking (NexGuard).</li>
+              <li>Conducted training for internal teams and international vendors; built SOPs and checklists.</li>
+            </ul>
+          </div>
+          <div class="t-item">
+            <div class="t-head">
+              <div class="t-title">Assistant Manager – Studio Technical • Shemaroo Entertainment Ltd.</div>
+              <div class="t-meta">Mumbai • 2006 — 2019</div>
+            </div>
+            <ul>
+              <li>Managed SAN data, backups, and media movement across post/broadcast operations.</li>
+              <li>Provided first‑line support across hardware, software, and networking; enforced security policies.</li>
+            </ul>
+          </div>
+          <div class="t-item">
+            <div class="t-head">
+              <div class="t-title">Technical & Network Engineering Roles • Network TechLab / Quest Solutions / Anshuman</div>
+              <div class="t-meta">1998 — 2006</div>
+            </div>
+            <ul>
+              <li>Hardware & network engineering, system administration, and customer support.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container grid two">
+        <div class="card">
+          <h2>Core Skills</h2>
+          <div>
+            <span class="pill">Vizrt Viz One (Admin + Workflows)</span>
+            <span class="pill">MAM / DAM</span>
+            <span class="pill">Metadata Governance</span>
+            <span class="pill">Workflow Automation</span>
+            <span class="pill">JIRA (Support / CMT / PMT)</span>
+            <span class="pill">Elemental</span>
+            <span class="pill">Telestream Vantage</span>
+            <span class="pill">Carbon Coder</span>
+            <span class="pill">Baton (QC)</span>
+            <span class="pill">NexGuard</span>
+            <span class="pill">Oracle DIVA</span>
+            <span class="pill">SAN / NAS</span>
+            <span class="pill">Aspera / FileCatalyst</span>
+            <span class="pill">AWS / Azure</span>
+            <span class="pill">Security & Compliance (MPAA)</span>
+          </div>
+        </div>
+        <div class="card">
+          <h2>What I Do</h2>
+          <ul>
+            <li>Design & deploy scalable Viz One workflows for broadcast & digital.</li>
+            <li>Standardize metadata, naming, and delivery protocols for high discoverability.</li>
+            <li>Run JIRA operations: ticket triage, change & patch management, RCA & reporting.</li>
+            <li>Coach teams & vendors; create SOPs, checklists, and training material.</li>
+            <li>Ensure secure, compliant, and on‑time content delivery.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Selected Projects</h2>
+        <div class="grid two">
+          <div class="card">
+            <h3>FAST Channel Implementation (OTT)</h3>
+            <p>Deployed a FAST channel workflow with automated ingest, QC, metadata enrichment, and delivery—recognized with a <strong>Gold Award</strong>.</p>
+          </div>
+          <div class="card">
+            <h3>Digital Data Archival</h3>
+            <p>Executed LTO 5/6 archival and restoration for premium content libraries (e.g., Aamir Khan Productions; Global Pagoda).</p>
+          </div>
+          <div class="card">
+            <h3>200TB SAN/NAS Infrastructure</h3>
+            <p>Planned and implemented high‑availability storage for post & broadcast workflows; optimized performance and reliability.</p>
+          </div>
+          <div class="card">
+            <h3>MPAA‑Compliant Workflows</h3>
+            <p>Implemented security‑aligned processes across ingest, review, distribution, and archive with audit‑ready documentation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certs">
+      <div class="container grid two">
+        <div class="card">
+          <h2>Certifications</h2>
+          <ul>
+            <li>Vizrt: Viz One Basic Administration; Viz One Advanced Administration (Part 1)</li>
+            <li>AWS Certified Solutions Architect – Associate</li>
+            <li>Microsoft Certified: Azure Fundamentals</li>
+            <li>Scrum Alliance CSPO</li>
+            <li>CCNA (Cisco Certified Network Associate)</li>
+            <li>AWS Security Essentials; System Operations on AWS; Advanced Architecting on AWS</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>Education</h2>
+          <ul>
+            <li>MBA, Information Technology & Network Management — IBRM</li>
+            <li>Diploma, Electronics & Telecommunication — K.B.P. Polytechnic (BTE, Mumbai)</li>
+            <li>Advanced Diploma, Computer Hardware & Web Technology — Reinet, Mumbai</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container grid two">
+        <div class="card">
+          <h2>Contact</h2>
+          <p>Open to roles in <strong>Digital Asset Management</strong>, <strong>MAM Operations</strong>, and <strong>Content Technology Leadership</strong>.</p>
+          <p>
+            <strong>Email:</strong> <a href="mailto:add-your-email@example.com">pradip.shende.com</a><br/>
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pradip-shende-815b5616" target="_blank" rel="noopener">linkedin.com/in/pradip-shende-815b5616</a><br/>
+            <strong>Location:</strong> Mumbai, India
+          </p>
+          <p class="t-meta">(Replace the placeholder email with your real address before publishing.)</p>
+        </div>
+        <div class="card">
+          <h2>Download</h2>
+          <p>Want a copy? Save this page as PDF from your browser (<em>Print → Save as PDF</em>) or ask me to generate a designed PDF resume/portfolio.</p>
+          <a class="btn btn-outline" href="#">Request a designed PDF</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Pradip Shende. All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pradip Shende",
+    "jobTitle": "Associate Director – Content Technology",
+    "address": {"@type": "PostalAddress", "addressLocality": "Mumbai", "addressCountry": "IN"},
+    "url": "https://www.linkedin.com/in/pradip-shende-815b5616",
+    "sameAs": ["https://www.linkedin.com/in/pradip-shende-815b5616"],
+    "knowsAbout": [
+      "Vizrt Viz One", "Media Asset Management", "Digital Asset Management", "Metadata", "JIRA",
+      "Elemental", "Vantage", "Oracle DIVA", "SAN/NAS", "AWS", "Azure"
+    ]
+  }
+  </script>
+</body>
+</html>
